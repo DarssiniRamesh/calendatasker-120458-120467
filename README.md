@@ -41,4 +41,7 @@ To enable these features, you **must** register for API keys at both Resend and 
 
 ### More Info
 
-- For how to use or test the endpoints, see FastAPI docs at `/docs` or `/email/setup-help` endpoint for runtime instructions.
+- To view and test live API endpoints, open the FastAPI docs at `/docs` or redoc at `/redoc`
+- For generated OpenAPI JSON (for frontend codegen/TypeScript types), use `/docs/openapi`
+- For self-test or deployment validation, see `/self-test` (returns {"status": "ok"} if backend config is valid)
+- See `/email/setup-help` for runtime credential setup instructions
