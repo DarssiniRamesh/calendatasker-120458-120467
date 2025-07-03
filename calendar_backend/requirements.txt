@@ -44,3 +44,9 @@ websockets==15.0.1
 # JWT / Clerk integration dependencies
 python-jose[cryptography]==3.3.0
 python-dotenv==1.1.0
+
+# Email/Gmail/Reminders integrations
+requests==2.32.3
+apscheduler==3.10.4
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0

@@ -6,6 +6,7 @@ from .auth import router as auth_router, clerk_jwt_required
 from .notifications import router as notifications_router
 from .gmail import router as gmail_router
 from .schedulers import router as schedulers_router
+from .email_integrations import router as email_router
 
 from fastapi import Depends
 
@@ -55,6 +56,10 @@ app.include_router(
 )
 app.include_router(
     schedulers_router,
+    dependencies=[Depends(clerk_jwt_required)]
+)
+app.include_router(
+    email_router,
     dependencies=[Depends(clerk_jwt_required)]
 )
 app.include_router(

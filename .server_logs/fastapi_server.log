@@ -49,7 +49,7 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
-  File "/home/kavia/workspace/code-generation/calendatasker-120458-120467/calendar_backend/src/api/main.py", line 4, in <module>
+  File "/home/kavia/workspace/code-generation/calendatasker-120458-120467/calendar_backend/src/api/main.py", line 5, in <module>
     from .auth import router as auth_router, clerk_jwt_required
   File "/home/kavia/workspace/code-generation/calendatasker-120458-120467/calendar_backend/src/api/auth.py", line 6, in <module>
     from jose import jwt, JWTError
